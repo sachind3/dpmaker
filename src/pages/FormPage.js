@@ -2,7 +2,7 @@ import { useState, useRef } from "react";
 import { useHistory } from "react-router-dom";
 import Cropper from "react-cropper";
 import "cropperjs/dist/cropper.css";
-import { Form, Button, ButtonGroup } from "react-bootstrap";
+import { Form, Button } from "react-bootstrap";
 const FormPage = () => {
   let history = useHistory();
   const [name, setName] = useState("");

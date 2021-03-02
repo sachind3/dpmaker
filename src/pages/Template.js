@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { LoadingContext } from "./../context/Service";
 import html2canvas from "html2canvas";
 const Template = () => {
-  const [isLoading, setIsLoading] = useContext(LoadingContext);
+  const [setIsLoading] = useContext(LoadingContext);
   const userData = JSON.parse(localStorage.getItem("imageData"));
   console.log(userData);
   const downloadImage = () => {
