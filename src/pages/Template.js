@@ -3,8 +3,9 @@ import { LoadingContext } from "./../context/Service";
 import html2canvas from "html2canvas";
 const Template = () => {
   const [loading, setIsLoading] = useContext(LoadingContext);
+
   const userData = JSON.parse(localStorage.getItem("imageData"));
-  console.log(userData);
+  console.log(loading);
   const downloadImage = () => {
     setIsLoading(true);
     window.scrollTo(0, 0);
