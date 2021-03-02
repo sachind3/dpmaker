@@ -29,7 +29,7 @@ const Intro = () => {
         <input type="checkbox" id="terms" onChange={handleCheck} />
         <p>
           I have read and agree to the{" "}
-          <a href="https://www.google.com" target="_blank">
+          <a href="https://www.google.com" target="_blank" rel="noreferrer">
             terms and conditions
           </a>
         </p>

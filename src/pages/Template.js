@@ -34,6 +34,7 @@ const Template = () => {
           <img
             src={userData.image}
             style={{ width: "100%", display: "block" }}
+            alt="img"
           />
         )}
         <h1>{userData.name}</h1>
@@ -42,7 +43,11 @@ const Template = () => {
       <button type="button" onClick={downloadImage}>
         download
       </button>
-      <img id="generatedImg" style={{ opacity: "0", display: "none" }} />
+      <img
+        id="generatedImg"
+        style={{ opacity: "0", display: "none" }}
+        alt="img"
+      />
     </>
   );
 };
